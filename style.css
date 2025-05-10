@@ -1,0 +1,150 @@
+:root {
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+body {
+  background: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+  height: 100vh;
+  font-family: sans-serif;
+  padding-top: 100px;
+}
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin-top: 20px;
+  z-index: 2;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 3px #dee7ef;
+}
+header .container .dark_light {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+header .container .dark_light:hover {
+  background-color: hsla(226, 11%, 37%, 0.192);
+}
+.big_container {
+  margin-top: 00px;
+}
+.big_container .filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.big_container .filter .filter_nav {
+  display: flex;
+  gap: 20px;
+}
+.big_container .filter .filter_nav .filter_el {
+  font-size: 18px;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0px 0px 3px #dee7ef;
+  transition: 0.4s;
+  text-transform: capitalize;
+  
+}
+.big_container .filter .filter_nav .filter_el.active{
+    background-color: red;
+    color: white;
+}
+.big_container .filter .filter_nav .filter_el:hover {
+  background-color: hsl(3, 77%, 44%);
+  color: white;
+}
+.extention{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+justify-content: center;
+}
+.extention .card{
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+    border-radius: 20px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+      box-shadow: 0px 0px 3px #dee7ef;
+
+}
+.extention .card .info{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.extention .card .info .content {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    
+}
+.extention .card .info .content h2{
+    font-size: 19px;
+}
+.extention .card .info .content p{
+    margin-top: -8px;
+}
+.extention .card .btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.extention .card .btns button{
+    background-color: transparent;
+    border: 1px solid black;
+    outline: 0;
+    padding: 8px;
+    font-size: 14px;
+    width: 100px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.extention .card .btns button:hover{
+    background-color: red;
+ color: white;
+}
+.active_div{
+    background-color: #ebf2fc;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.092);
+    position: relative;
+    cursor: pointer;
+}
+.active_div .active_circle{
+    height: 100%;
+    width: 50%;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    transition: 0.4s;
+transition: 0.4s;
+}
+.active_div.active{
+    background-color: red;
+}
+.active_div.active .active_circle{
+    background-color: white;
+    right: 0;
+    position: absolute;
+}
