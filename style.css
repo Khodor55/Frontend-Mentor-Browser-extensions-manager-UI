@@ -148,3 +148,9 @@ transition: 0.4s;
     right: 0;
     position: absolute;
 }
+@media (max-width :630px) {
+    .big_container .filter {
+        flex-direction: column;
+margin-bottom: 20px;
+    }
+}
